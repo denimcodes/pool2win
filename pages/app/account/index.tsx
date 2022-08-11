@@ -1,17 +1,21 @@
+import Head from "next/head";
 import Link from "next/link";
 
 export default function AccountPage() {
 	return (
-		<div className="text-white bg-dark">
+		<div>
+			<Head>
+				<title>Pool2Win | Account</title>
+			</Head>
 			<div className="h-screen">
 				<header>
 					<div className="container max-w-5xl py-8 mx-auto">
 						<div className="flex items-center justify-between">
-						<h1 className="text-3xl font-medium uppercase cursor-pointer font-DMSans">
-							<Link href="/">
-								<a>Pool2Win</a>
-							</Link>
-						</h1>
+							<h1 className="text-3xl font-medium uppercase cursor-pointer font-DMSans">
+								<Link href="/">
+									<a>Pool2Win</a>
+								</Link>
+							</h1>
 							<nav>
 								<ul className="flex gap-8">
 									<li className="font-medium text-gray-400 uppercase">

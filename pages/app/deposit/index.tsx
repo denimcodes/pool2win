@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Link from "next/link";
 
 export default function DepositPage() {
 	return (
-		<div className="text-white bg-dark">
+		<div>
+			<Head>
+				<title>Pool2Win | Deposit</title>
+			</Head>
 			<div className="h-screen">
 				<header>
 					<div className="container max-w-5xl py-8 mx-auto">
