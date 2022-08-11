@@ -15,9 +15,9 @@ const Home: NextPage = () => {
 			</Head>
 			<div className="h-screen">
 				<header>
-					<div className="container max-w-5xl py-8 mx-auto xl:py-16 xl:max-w-6xl">
+					<div className="container max-w-5xl px-8 py-8 mx-auto lg:px-0 xl:py-16 xl:max-w-6xl">
 						<div className="flex items-center justify-between">
-							<h1 className="text-3xl font-medium uppercase cursor-pointer font-DMSans hover:text-gray-200">
+							<h1 className="text-2xl font-medium uppercase cursor-pointer lg:text-3xl font-DMSans hover:text-gray-200">
 								<Link href="/">
 									<a>Pool2Win</a>
 								</Link>
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 											behavior: "smooth",
 										});
 									}}
-									className="text-gray-200 uppercase hover:text-white text-md hover:cursor-pointer"
+									className="text-sm text-gray-200 uppercase hover:text-white hover:cursor-pointer lg:text-md"
 								>
 									How it works
 								</a>
@@ -43,10 +43,10 @@ const Home: NextPage = () => {
 					</div>
 				</header>
 				<main>
-					<div className="container max-w-5xl mx-auto xl:max-w-6xl">
-						<section className="flex items-center justify-between h-1/6 xl:mt-14">
-							<div className="w-1/2 space-y-7">
-								<h2 className="text-5xl font-bold leading-tight uppercase text-gray-50 xl:text-6xl xl:leading-tight">
+					<div className="container max-w-5xl px-8 mx-auto lg:px-0 xl:max-w-6xl">
+						<section className="flex flex-col-reverse items-center justify-between sm:flex-row h-1/6 xl:mt-14">
+							<div className="flex flex-col items-center sm:items-start sm:w-1/2 space-y-7">
+								<h2 className="text-3xl font-bold leading-tight text-center uppercase sm:text-left text-gray-50 xl:text-7xl md:text-5xl md:mt-20 lg:mt-8 xl:mt-0 sm:text-4xl sm:mt-20 lg:text-5xl lg:leading-tight">
 									Save money and have a chance to{" "}
 									<span className="text-orange-500">win prizes</span> &#x1F4B8;
 								</h2>
@@ -71,14 +71,14 @@ const Home: NextPage = () => {
 							</div>
 						</section>
 
-						<section className="py-10 xl:mt-36">
+						<section className="py-10 xl:mt-48 lg:mt-28">
 							<h2
 								ref={scrollToRef}
-								className="text-5xl font-medium text-center uppercase text-gray-50"
+								className="text-4xl font-medium text-center uppercase mt-14 text-gray-50 lg:text-5xl"
 							>
 								How does it work ?
 							</h2>
-							<div className="grid grid-cols-3 gap-10 mt-28 xl:mt-96">
+							<div className="grid grid-cols-1 gap-10 sm:grid-cols-3 mt-28 lg:mt-32 xl:mt-56">
 								<div className="flex gap-4">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@ const Home: NextPage = () => {
 							<div className="flex items-center justify-center float-right gap-6">
 								<p className="text-lg">Follow us on</p>
 								<ul className="flex items-center gap-4">
-									<li className=" hover:cursor-pointer">
+									<li className="hover:cursor-pointer">
 										<Image
 											src="/images/twitter.png"
 											width="23px"
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
 											alt=""
 										/>
 									</li>
-									<li className="cursor-pointer hover:">
+									<li className="hover:cursor-pointer">
 										<Image
 											src="/images/discord.png"
 											alt=""
