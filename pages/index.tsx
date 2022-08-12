@@ -1,9 +1,9 @@
+import { ArrowRightIcon } from "@heroicons/react/solid";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import {ArrowRightIcon} from "@heroicons/react/solid"
 
 const Home: NextPage = () => {
 	const scrollToRef = useRef<null | HTMLHeadingElement>(null);
@@ -44,29 +44,43 @@ const Home: NextPage = () => {
 				</header>
 				<main>
 					<div className="container max-w-5xl px-8 mx-auto lg:px-0 xl:max-w-6xl">
-						<section className="flex flex-col-reverse items-center justify-between sm:flex-row h-1/6 xl:mt-14">
-							<div className="flex flex-col items-center sm:items-start sm:w-1/2 space-y-7">
-								<h2 className="text-3xl font-bold leading-tight text-center uppercase sm:text-left text-gray-50 xl:text-7xl md:text-5xl md:mt-20 lg:mt-8 xl:mt-0 sm:text-4xl sm:mt-20 lg:text-5xl lg:leading-tight">
-									Save money and have a chance to{" "}
-									<span className="text-orange-500">win prizes</span> &#x1F4B8;
-								</h2>
-								{/* <button className="py-3 text-lg font-medium text-white uppercase bg-orange-600 rounded-md px-7 hover:bg-orange-700">
+						<section>
+							<div className="flex flex-col-reverse items-center justify-between sm:flex-row h-1/6 xl:mt-1">
+								<div className="flex flex-col items-center sm:items-start sm:w-1/2 space-y-7">
+									<h2 className="text-3xl font-bold leading-tight text-center uppercase sm:text-left text-gray-50 xl:text-7xl md:text-5xl md:mt-20 lg:mt-8 xl:mt-0 sm:text-4xl sm:mt-20 lg:text-5xl lg:leading-tight">
+										Save money and have a chance to{" "}
+										<span className="text-orange-500">win prizes</span>{" "}
+										&#x1F4B8;
+									</h2>
+									{/* <button className="py-3 text-lg font-medium text-white uppercase bg-orange-600 rounded-md px-7 hover:bg-orange-700">
 									Save money and start winning
 								</button> */}
-								<button className="flex items-center gap-3 py-3 text-lg font-medium text-white uppercase bg-orange-600 rounded-md px-7 hover:bg-orange-700">
-									Join Discord
-									<ArrowRightIcon className="w-4 h-4" />
-								</button>
-								<p className="text-sm text-gray-300 uppercase">
-									Launching soon
-								</p>
+									<button className="flex items-center gap-3 py-3 text-lg font-medium text-white uppercase bg-orange-600 rounded-md px-7 hover:bg-orange-700">
+										Join Discord
+										<ArrowRightIcon className="w-4 h-4" />
+									</button>
+									<p className="text-sm text-gray-300 uppercase">
+										Launching soon
+									</p>
+								</div>
+								<div>
+									<Image
+										src="/images/hero.webp"
+										alt=""
+										width="500px"
+										height="500px"
+									/>
+								</div>
 							</div>
-							<div>
+							<div className="flex items-center justify-center gap-4 mt-8 md:mt-0 md:justify-start">
+								<p className="text-lg font-medium text-gray-200 uppercase">
+									Built on
+								</p>
 								<Image
-									src="/images/hero.webp"
+									src="/images/solanaLogo.svg"
 									alt=""
-									width="500px"
-									height="500px"
+									width="150px"
+									height="60px"
 								/>
 							</div>
 						</section>
