@@ -17,11 +17,21 @@ const Home: NextPage = () => {
 				<header>
 					<div className="container max-w-5xl px-8 py-8 mx-auto lg:px-0 xl:py-16 xl:max-w-6xl">
 						<div className="flex items-center justify-between">
-							<h1 className="text-2xl font-medium uppercase cursor-pointer lg:text-3xl font-DMSans hover:text-gray-200">
+							<Link href="/">
+								<a className="hover:brightness-90">
+									<Image
+										src="/images/pool2win.png"
+										width="160px"
+										height="50px"
+										alt=""
+									/>
+								</a>
+							</Link>
+							{/* <h1 className="text-2xl font-medium uppercase cursor-pointer lg:text-3xl font-DMSans hover:text-gray-200">
 								<Link href="/">
 									<a>Pool2Win</a>
 								</Link>
-							</h1>
+							</h1> */}
 							<div className="flex items-center justify-center gap-8">
 								<a
 									onClick={() => {
@@ -55,10 +65,15 @@ const Home: NextPage = () => {
 									{/* <button className="py-3 text-lg font-medium text-white uppercase bg-orange-600 rounded-md px-7 hover:bg-orange-700">
 									Save money and start winning
 								</button> */}
-									<button className="flex items-center gap-3 py-3 text-lg font-medium text-white uppercase bg-orange-600 rounded-md px-7 hover:bg-orange-700">
+									<a
+										target="_blank"
+										href="https://discord.gg/ufRu8haRwk"
+										rel="noreferrer"
+										className="flex items-center gap-3 py-3 text-lg font-medium text-white uppercase bg-orange-600 rounded-md px-7 hover:bg-orange-700"
+									>
 										Join Discord
 										<ArrowRightIcon className="w-4 h-4" />
-									</button>
+									</a>
 									<p className="text-sm text-gray-300 uppercase">
 										Launching soon
 									</p>
@@ -113,7 +128,7 @@ const Home: NextPage = () => {
 											Deposit money
 										</h3>
 										<p className="text-lg text-gray-400">
-											Deposit money into the savings pool
+											Deposit money into the pool
 										</p>
 									</div>
 								</div>
@@ -134,7 +149,7 @@ const Home: NextPage = () => {
 									</svg>
 									<div className="space-y-4">
 										<h3 className="text-3xl font-medium text-gray-100">
-											Earn interest on deposits
+											Interest accrues on deposits
 										</h3>
 										<p className="text-lg text-gray-400">
 											Pool money is deployed to yield farming/lending protocols
@@ -162,7 +177,7 @@ const Home: NextPage = () => {
 											Win prizes
 										</h3>
 										<p className="text-lg text-gray-400">
-											The interest earned is given out to depositors as prizes
+											The interest is awarded as prizes to lucky winners
 										</p>
 									</div>
 								</div>
@@ -172,21 +187,33 @@ const Home: NextPage = () => {
 							<div className="flex items-center justify-center float-right gap-6">
 								<p className="text-lg">Follow us on</p>
 								<ul className="flex items-center gap-4">
-									<li className="hover:cursor-pointer">
-										<Image
-											src="/images/twitter.png"
-											width="23px"
-											height="23px"
-											alt=""
-										/>
+									<li className="hover:cursor-pointer hover:brightness-90">
+										<a
+											target="_blank"
+											href="https://twitter.com/pool2win_"
+											rel="noreferrer"
+										>
+											<Image
+												src="/images/twitter.png"
+												width="23px"
+												height="23px"
+												alt=""
+											/>
+										</a>
 									</li>
-									<li className="hover:cursor-pointer">
-										<Image
-											src="/images/discord.png"
-											alt=""
-											width="24px"
-											height="24px"
-										/>
+									<li className="hover:cursor-pointer hover:brightness-90">
+										<a
+											target="_blank"
+											href="https://discord.gg/ufRu8haRwk"
+											rel="noreferrer"
+										>
+											<Image
+												src="/images/discord.png"
+												alt=""
+												width="24px"
+												height="24px"
+											/>
+										</a>
 									</li>
 								</ul>
 							</div>
