@@ -17,11 +17,12 @@ const Home: NextPage = () => {
 				<header>
 					<div className="container max-w-5xl px-8 py-8 mx-auto lg:px-0 xl:py-16 xl:max-w-6xl">
 						<div className="flex items-center justify-between">
-							<h1 className="text-2xl font-medium uppercase cursor-pointer lg:text-3xl font-DMSans hover:text-gray-200">
+									<Image src="/images/pool2win.png" width="160px" height="50px" alt="" />
+							{/* <h1 className="text-2xl font-medium uppercase cursor-pointer lg:text-3xl font-DMSans hover:text-gray-200">
 								<Link href="/">
 									<a>Pool2Win</a>
 								</Link>
-							</h1>
+							</h1> */}
 							<div className="flex items-center justify-center gap-8">
 								<a
 									onClick={() => {
@@ -56,7 +57,13 @@ const Home: NextPage = () => {
 									Save money and start winning
 								</button> */}
 									<button className="flex items-center gap-3 py-3 text-lg font-medium text-white uppercase bg-orange-600 rounded-md px-7 hover:bg-orange-700">
-										Join Discord
+										<a
+											target="_blank"
+											href="https://discord.gg/VQ9gMH78"
+											rel="noreferrer"
+										>
+											Join Discord
+										</a>
 										<ArrowRightIcon className="w-4 h-4" />
 									</button>
 									<p className="text-sm text-gray-300 uppercase">
@@ -172,21 +179,33 @@ const Home: NextPage = () => {
 							<div className="flex items-center justify-center float-right gap-6">
 								<p className="text-lg">Follow us on</p>
 								<ul className="flex items-center gap-4">
-									<li className="hover:cursor-pointer">
+									<li className="hover:cursor-pointer hover:brightness-90">
+										<a
+											target="_blank"
+											href="https://twitter.com/pool2win_"
+											rel="noreferrer"
+										>
 										<Image
 											src="/images/twitter.png"
 											width="23px"
 											height="23px"
 											alt=""
 										/>
+										</a>
 									</li>
-									<li className="hover:cursor-pointer">
-										<Image
-											src="/images/discord.png"
-											alt=""
-											width="24px"
-											height="24px"
-										/>
+									<li className="hover:cursor-pointer hover:brightness-90">
+										<a
+											target="_blank"
+											href="https://discord.gg/VQ9gMH78"
+											rel="noreferrer"
+										>
+											<Image
+												src="/images/discord.png"
+												alt=""
+												width="24px"
+												height="24px"
+											/>
+										</a>
 									</li>
 								</ul>
 							</div>
