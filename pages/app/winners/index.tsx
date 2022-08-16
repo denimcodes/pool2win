@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import Link from "next/link";
 
@@ -18,12 +19,12 @@ export default function DepositPage() {
 						</h1>
 							<nav>
 								<ul className="flex gap-8 text-gray-400">
-									<li className="font-medium text-white uppercase ">
+									<li className="font-medium uppercase">
 										<Link href="/app/deposit">
 											<a>Deposit</a>
 										</Link>
 									</li>
-									<li className="font-medium uppercase">
+									<li className="font-medium text-white uppercase">
 										<Link href="/app/winners">
 											<a>Winners</a>
 										</Link>
@@ -42,29 +43,8 @@ export default function DepositPage() {
 					</div>
 				</header>
 				<main className="grid h-2/3 place-content-center">
-					<div className="space-y-8">
-						<form className="space-y-3">
-							<label className="font-medium uppercase" htmlFor="amount">
-								Amount
-							</label>
-							<br />
-							<input
-								className="px-4 text-black rounded-md h-14 w-96"
-								type="number"
-								name="amount"
-								id="amount"
-							>
-              </input>
-						</form>
-						<div className="flex items-center justify-between">
-							<p className="font-medium">Rewards APR:</p>
-							<p className="font-medium">13.8%</p>
-						</div>
-						<button className="flex items-center justify-center w-full gap-3 py-3 font-medium uppercase bg-orange-600 rounded-md white px-7">
-							Deposit
-						</button>
-					</div>
-				</main>
+          <p className="text-xl">No winners yet</p>
+        </main>
 			</div>
 		</div>
 	);

@@ -72,7 +72,6 @@ const Home: NextPage = () => {
 										className="flex items-center gap-3 py-3 text-lg font-medium text-white uppercase bg-orange-600 rounded-md px-7 hover:bg-orange-700"
 									>
 										Join Discord
-
 										<ArrowRightIcon className="w-4 h-4" />
 									</a>
 									<p className="text-sm text-gray-300 uppercase">
@@ -200,14 +199,12 @@ const Home: NextPage = () => {
 												height="23px"
 												alt=""
 											/>
-
 										</a>
 									</li>
 									<li className="hover:cursor-pointer hover:brightness-90">
 										<a
 											target="_blank"
 											href="https://discord.gg/ufRu8haRwk"
-
 											rel="noreferrer"
 										>
 											<Image

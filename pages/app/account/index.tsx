@@ -17,13 +17,18 @@ export default function AccountPage() {
 								</Link>
 							</h1>
 							<nav>
-								<ul className="flex gap-8">
-									<li className="font-medium text-gray-400 uppercase">
+								<ul className="flex gap-8 text-gray-400 ">
+									<li className="font-medium uppercase">
 										<Link href="/app/deposit">
 											<a>Deposit</a>
 										</Link>
 									</li>
 									<li className="font-medium uppercase">
+										<Link href="/app/winners">
+											<a>Winners</a>
+										</Link>
+									</li>
+									<li className="font-medium text-white uppercase">
 										<Link href="/app/account">
 											<a>Account</a>
 										</Link>
